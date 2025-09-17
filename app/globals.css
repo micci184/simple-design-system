@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Figma tokens -> CSS Variables */
+@layer base {
+  :root {
+    /* Colors */
+    --color-background-default: #ffffff; /* Background/Default/Default */
+    --color-background-default-secondary: #f5f5f5; /* Background/Default/Secondary */
+    --color-background-neutral-tertiary: #e3e3e3; /* Background/Neutral/Tertiary */
+    --color-background-brand-default: #2c2c2c; /* Background/Brand/Default */
+    --color-background-brand-tertiary: #f5f5f5; /* Background/Brand/Tertiary */
+
+    --color-text-default: #1e1e1e; /* Text/Default/Default */
+    --color-text-secondary: #757575; /* Text/Default/Secondary */
+    --color-text-tertiary: #b3b3b3; /* Text/Default/Tertiary */
+    --color-text-on-brand: #f5f5f5; /* Text/Brand/On Brand */
+    --color-text-on-brand-secondary: #1e1e1e; /* Text/Brand/On Brand Secondary */
+
+    --color-border-default: #d9d9d9; /* Border/Default/Default */
+    --color-border-brand: #2c2c2c; /* Border/Brand/Default */
+    --color-border-neutral-secondary: #767676; /* Border/Neutral/Secondary */
+
+    --color-icon-default: #1e1e1e; /* Icon/Default/Default */
+    --color-slate-200: #e3e3e3; /* Slate/200 */
+    --color-image-placeholder: #E3E3E3; /* Image Placeholder */
+
+    /* Spacing */
+    --spacing-050: 2px; /* Space/050 */
+    --spacing-200: 8px; /* Space/200 */
+    --spacing-300: 12px; /* Space/300 */
+    --spacing-400: 16px; /* Space/400 */
+    --spacing-600: 24px; /* Space/600 */
+    --spacing-800: 32px; /* Space/800 */
+    --spacing-1200: 48px; /* Space/1200 */
+    --spacing-1600: 64px; /* Space/1600 */
+    --spacing-4000: 160px; /* Space/4000 */
+
+    /* Radius */
+    --radius-200: 8px; /* Radius/200 */
+    --radius-full: 9999px; /* Radius/Full */
+
+    /* Border width */
+    --border-width: 1px; /* border-width / Stroke/Border */
+
+    /* Typography */
+    --font-family-base: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+
+    --font-size-body: 16px; /* Body/Size Medium */
+    --line-height-body: 1.4; /* Body Base lineHeight */
+    --font-weight-body-regular: 400; /* Body/Font Weight Regular */
+    --font-weight-body-strong: 600; /* Body/Font Weight Strong */
+
+    --font-size-heading: 24px; /* Heading/Size Base */
+    --line-height-heading: 1.2; /* Heading lineHeight */
+    --font-weight-heading: 600; /* Heading/Font Weight */
+
+    --font-size-subheading: 20px; /* Subheading/Size Medium */
+    --line-height-subheading: 1.2; /* Subheading lineHeight */
+    --font-weight-subheading: 400; /* Subheading/Font Weight */
+
+    --font-size-subtitle: 32px; /* Subtitle/Size Base */
+    --line-height-subtitle: 1.2; /* Subtitle lineHeight */
+    --font-weight-subtitle: 400; /* Subtitle/Font Weight */
+
+    --font-size-hero: 72px; /* Title Hero/Size */
+    --line-height-hero: 1.2; /* Title Hero lineHeight */
+    --font-weight-hero: 700; /* Title Hero/Font Weight */
+
+    /* Icon size */
+    --icon-size-lg: 40px; /* Icon/Large */
+
+    /* Shadows (not provided yet) */
+    /* --shadow-sm: ... */
+  }
+
+  html { color-scheme: light; }
+
+  body {
+    @apply bg-background text-text;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-body-regular);
+  }
+}
